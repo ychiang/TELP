@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  database: telp_development
+  pool: 5
+  username: dreamfairy
+  password: ""
+
+test:
+  adapter: postgresql
+  database: telp_test
+  pool: 5
+  username: dreamfairy
+  password: ""
