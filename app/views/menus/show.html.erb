@@ -1,4 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Restaurnat:</strong>
+  <%= @menu.restaurnat %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @menu.body %>
+</p>
+
 <%= link_to 'Edit', edit_menu_path(@menu) %> |
 <%= link_to 'Back', menus_path %>

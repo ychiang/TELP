@@ -14,6 +14,8 @@ class MenusTest < ApplicationSystemTestCase
     visit menus_url
     click_on "New Menu"
 
+    fill_in "Body", with: @menu.body
+    fill_in "Restaurnat", with: @menu.restaurnat
     click_on "Create Menu"
 
     assert_text "Menu was successfully created"
@@ -24,6 +26,8 @@ class MenusTest < ApplicationSystemTestCase
     visit menus_url
     click_on "Edit", match: :first
 
+    fill_in "Body", with: @menu.body
+    fill_in "Restaurnat", with: @menu.restaurnat
     click_on "Update Menu"
 
     assert_text "Menu was successfully updated"
